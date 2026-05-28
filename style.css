@@ -61,17 +61,23 @@ body{
 }
 
 .compound{
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    color: #515076;
+}
+
+.compound-2{
+
+    margin-bottom: 5px;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 5px;
     color: #515076;
-}
-
-.compound-2{
-    margin-left: 25px;
-    margin-top: 15px;
-    margin-bottom: 25px;
 }
 
 .compound-3{

@@ -1,35 +1,35 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 18px;
+    color: #515076;
 }
-.title{
+.title {
     font-size: 70px;
     font-weight: 400px;
-    color:#515076;
     line-height: 78px;
     margin: 0;
     text-align: center;
 }
 
-.card{
-    background-color:#F7F7FA;
-    width:340px;
+.card {
+    background-color: #F7F7FA;
+    width: 340px;
     margin-left: 85px;
 }
-.picture{
+.picture {
     margin-left: 25px;
     margin-right: 25px;
     margin-top: 25px;
     margin-bottom: 30px;
 }
-.product-list{
+.product-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.for-what{
+.for-what {
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
@@ -37,66 +37,62 @@ body{
     margin-top: 30px;
     margin-bottom: 5px;
     margin-left: 25px;
+    text-transform: uppercase;
 }
 
-.name-card{
+.name-card {
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
-    color:#515076;
-    margin-top:5px;
+    margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 25px
 }
 
-.description{
+.description {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
     margin-left: 25px;
-    color: #515076;
     margin-top: 5px;
     margin-bottom: 15px;
 
 }
 
-.compound{
+.compound {
     display: block;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 5px;
     margin-left: 25px;
-    color: #515076;
+
 }
 
-.compound-2{
+.compound-item {
 
     margin-bottom: 5px;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 5px;
-    color: #515076;
+
 }
 
-.compound-3{
+.compound-last-item {
     margin-bottom: 25px;
 }
-.price{
+.price {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     margin-left: 25px;
-    color:#515076;
     margin-bottom: 25px;
 }
 
-.numbers{
+.numbers {
     font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
-    color:#515076;
     margin-left: 161px;
     margin-bottom: 25px;
 }

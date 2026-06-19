@@ -22,12 +22,10 @@ body {
 .card {
     background-color: #F7F7FA;
     width: 340px;
-    padding-bottom: 25px;
+    padding: 25px;
     box-sizing: border-box;
 }
-.picture {
-    padding: 25px;
-}
+
 .product-list {
     list-style: none;
     padding: 0;
@@ -45,7 +43,6 @@ body {
     color: #A5A3B9;
     margin-top: 30px;
     margin-bottom: 5px;
-    margin-left: 25px;
     text-transform: uppercase;
 }
 
@@ -55,25 +52,25 @@ body {
     line-height: 27px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 25px
 }
 
 .description {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
-    margin-left: 25px;
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
+.list {
+    padding-left: 15px;
+}
 .compound {
     display: block;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 5px;
-    margin-left: 25px;
 }
 
 .compound-item {
@@ -101,5 +98,4 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 0px 25px;
 }

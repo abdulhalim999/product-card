@@ -55,9 +55,6 @@ body {
 }
 
 .description {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
     margin-top: 5px;
     margin-bottom: 15px;
 }
@@ -67,17 +64,10 @@ body {
 }
 .compound {
     display: block;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
     margin-bottom: 5px;
 }
 
 .compound-item {
-    margin-bottom: 5px;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
     margin-bottom: 5px;
 }
 

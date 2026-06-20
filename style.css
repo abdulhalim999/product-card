@@ -1,32 +1,39 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #515076;
+    padding: 220px 85px 116px;
+    background-image: url(images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-position: 200px 10px;
+    background-size: 790px 697px;
 }
+
 .title {
     font-size: 70px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 78px;
     margin: 0;
     text-align: center;
+    margin-bottom: 110px;
 }
 
 .card {
     background-color: #F7F7FA;
     width: 340px;
-    margin-left: 85px;
+    padding: 25px;
+    box-sizing: border-box;
 }
-.picture {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 25px;
-    margin-bottom: 30px;
-}
+
 .product-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
 }
 
 .for-what {
@@ -36,7 +43,6 @@ body {
     color: #A5A3B9;
     margin-top: 30px;
     margin-bottom: 5px;
-    margin-left: 25px;
     text-transform: uppercase;
 }
 
@@ -46,37 +52,23 @@ body {
     line-height: 27px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 25px
 }
 
 .description {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
-    margin-left: 25px;
     margin-top: 5px;
     margin-bottom: 15px;
-
 }
 
+.list {
+    padding-left: 15px;
+}
 .compound {
     display: block;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
     margin-bottom: 5px;
-    margin-left: 25px;
-
 }
 
 .compound-item {
-
     margin-bottom: 5px;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
-    margin-bottom: 5px;
-
 }
 
 .compound-last-item {
@@ -86,14 +78,14 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
-    margin-left: 25px;
-    margin-bottom: 25px;
 }
 
 .numbers {
     font-size: 20px;
-    font-weight: 400;
-    margin-left: 161px;
-    margin-bottom: 25px;
     line-height: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
 }

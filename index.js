@@ -2,28 +2,26 @@
 const firstCard = document.querySelector('.card');
 const colorButton = document.querySelector('.button-color');
 
-colorButton.addEventListener('click',function(){
+colorButton.addEventListener('click', function() {
     firstCard.style.backgroundColor = 'aqua'
 });
-console.log(firstCard);
 
 //все карточки
+
 const allCards = document.querySelectorAll('.card');
 const colorButtonAll = document.querySelector('.button-color-all');
 
-colorButtonAll.addEventListener('click',function(){
+colorButtonAll.addEventListener('click', function() {
     allCards.forEach(function(card) {
         card.style.backgroundColor ='gold';
     });
 });
-console.log(allCards);
 
 //гугл
 
 const openGoogle = document.querySelector('.button-open-google');
 
-openGoogle.addEventListener('click',
-    function () {
+openGoogle.addEventListener('click', function() {
     const userAnswer = confirm('Вы уверены что хотите перейти на сайт Google');
 
     if (userAnswer === true) {
@@ -31,17 +29,19 @@ openGoogle.addEventListener('click',
     } else {
         return;
     }
-})
+});
 
 //вывод консоль лог
 
 const outputLogButton = document.querySelector('.button-log-alert');
 
-outputLogButton.addEventListener('click', function() {outputLogAlert('Hello')})
+outputLogButton.addEventListener('click', function() {
+    outputLogAlert('Hello');
+});
 
 function outputLogAlert(message) {
-    alert(message)
-    console.log(message)
+    alert(message);
+    console.log(message);
 }
 
 //вывод тайтл в лог(6)
@@ -49,11 +49,11 @@ const pageTitle = document.querySelector('.title');
 
 pageTitle.addEventListener('mouseover', function() {
     console.log(event.target.textContent);
-})
+});
 
 //кнопка переключатель(7)
 const toggleButton = document.querySelector('.button-toggle');
 
-toggleButton.addEventListener('click',function() {
-    toggleButton.classList.toggle('active-color')
+toggleButton.addEventListener('click', function() {
+    toggleButton.classList.toggle('active-color');
 });

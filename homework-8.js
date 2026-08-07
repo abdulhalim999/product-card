@@ -47,37 +47,36 @@ const drinks = ['Эспрессо', 'Американо', 'Тоник'];
 
 //8 Массив с книгами
 
-const book1 = {
+const books = [
+{
     name : 'Война и мир',
     author : 'Л.Толстой',
     genre : 'Роман',
     manufactureYear : 1869,
     coverColor : 'Коричневый',
-};
-
-const book2 = {
+},
+{
     name : 'Как читать книги?',
     author : 'С.Поварнин',
     genre : 'Саморазвитие',
     manufactureYear : 1923,
     coverColor : 'Серый',
-};
-
-const book3 = {
+},
+{
     name : 'Обломов',
     author : 'И.Гончаров',
     genre : 'Роман',
     manufactureYear : 1859,
     coverColor : 'Серый',
-};
-
-const book4 = {
+},
+{
     name : 'Государь',
     author : 'Н.Макиавелли',
     genre : 'Политика',
     manufactureYear : 1532,
     coverColor : 'Зеленый',
-};
+},
+];
 
 const book5 = {
     name : 'Искусство спора',
@@ -87,39 +86,36 @@ const book5 = {
     coverColor : 'Желтый',
 };
 
-const books = [book1, book2, book3, book4];
-
 books.push(book5);
 
 console.log(books);
 
 //9 Массив с книгами марвел
 
-const hpBook1 = {
+const hpBooks = [
+{
     name: 'Гарри Поттер и философский камень',
     author: 'Дж. К. Роулинг',
     genre: 'Фэнтези',
     manufactureYear: 1997,
     coverColor: 'Красный'
-};
-
-const hpBook2 = {
+},
+{
     name: 'Гарри Поттер и Тайная комната',
     author: 'Дж. К. Роулинг',
     genre: 'Фэнтези',
     manufactureYear: 1998,
     coverColor: 'Зеленый'
-};
-
-const hpBook3 = {
+},
+{
     name: 'Гарри Поттер и узник Азкабана',
     author: 'Дж. К. Роулинг',
     genre: 'Фэнтези',
     manufactureYear: 2001,
     coverColor: 'Синий'
-};
+}
+];
 
-const hpBooks = [hpBook1, hpBook2, hpBook3];
 console.log(hpBooks)
 
 const allBooks = [...books,...hpBooks];

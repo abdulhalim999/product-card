@@ -42,7 +42,7 @@ tryBudget(90)
 function showResultTest(points) {
     if (points >= 80) {
         console.log('Поздравляем вы сдали экзамен с оценкой "Отлично"');
-    } else if(points < 80 && points > 60) {
+    } else if (points < 80 && points > 60) {
         console.log('Вы сдали экзамен с оценкой "Хорошо"');
     } else {
         console.log('Вы не сдали экзамен');

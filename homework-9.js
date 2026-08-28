@@ -39,20 +39,13 @@ console.log(commentsFilter);
 
 //8 айди
 
-const addPostId = comments.map(comment => {
-    if (comment.id <= 5) {
-        return {
-            ...comment,
-            postId : 2
-        }
-    } else {
-        return {
-            ...comment,
-            postId : 1
-        }
+const commentsWithPostId = comments.map(comment => {
+    return {
+        ...comment,
+        postId: comment.id <= 5 ? 2 : 1
     }
 })
-console.log(addPostId)
+console.log(commentsWithPostId)
 console.log(comments)
 
 //9 только айди и нэйм
@@ -67,19 +60,19 @@ console.log(newComments)
 
 //10 
 
-const addIsInvalid = comments.map(comment => {
+const commentsWithIsInvalid = comments.map(comment => {
     return {
         ...comment,
         isInvalid : comment.body.length > 180,
     }
 })
-console.log(addIsInvalid)
+console.log(commentsWithIsInvalid)
 
 //11
 
-const arrayOfEmail = comments.reduce((acc, comment) => {
-    acc.push(comment.email)
-    return acc
+const arrayOfEmail = comments.reduce((emails, comment) => {
+    emails.push(comment.email)
+    return emails
 },[])
 
 console.log(arrayOfEmail)

@@ -1,3 +1,5 @@
+import './homework-10.js';
+
 //первая карточка
 const firstCard = document.querySelector('.card');
 const colorButton = document.querySelector('.button-color');

@@ -10,6 +10,28 @@
 <body>
     <div class="background">
         <h1 class="title">Выбери свой продукт</h1>
+        <div class="button-container">
+            <button type="button" class="registration-button">Регистрация</button>
+        </div>
+        <div class="overlay"> </div>
+        <div class="modal">
+            <button type="button" class="modal__close-button">×</button>
+            <form class="modal__form" novalidate>
+                <label for="name">Имя</label>
+                <input required class="modal__form-name" placeholder="Введите имя" type="text" id="name">
+                <label for="surname">Фамилия</label>
+                <input required class="modal__form-surname" placeholder="Введите фамилию" type="text" id="surname">
+                <label for="date">Дата рождения</label>
+                <input required class="modal__form-birthdate" placeholder="Введите дату рождения" type="date" id="date">
+                <label for="login">Логин</label>
+                <input required class="modal__form-login" placeholder="Введите логин" type="text" id="login">
+                <label for="password">Пароль</label>
+                <input required class="modal__form-password" placeholder="Введите пароль" type="password" id="password">
+                <label for="confirm-password">Подтверждение пароля</label>
+                <input required class="modal__form-confirm-password" placeholder="Повторите введенный пароль" type="password" id="confirm-password">
+                <button type="submit"  class="modal__form-registration-button">Зарегистрироваться</button>
+            </form>
+        </div>
         <div class="btns">
             <button class="btn-appearance button-color">Сменить цвет первой карточки</button>
             <button class="btn-appearance button-color-all">Сменить цвет всех карточек</button>
@@ -25,7 +47,7 @@
                 <h2 class="card__name"></h2>
                 <p class="card__description"></p>
 
-                <span class="card__compound"></span>
+                <span class="card__compound">Состав:</span>
 
                 <ul class="card__list">
                     <li class="card__compound-item"></li>
@@ -40,11 +62,48 @@
         </template>
         </ul>
     </div>
+    <footer>
+    <div class="footer__container">
+        <div class="footer__mane">
+            <div class="footer__brand">
+                <h3 class="footer__brand-title">Product cards</h3>
+                <p class="footer__brand-text">У нас самые лучшие продукты для кожи!</p>
+                <div class="footer__icones-container">
+                    <img src="images/tg_icone.svg" alt="telegramm">
+                    <img src="images/vk_icone.svg" alt="vk">
+                </div>
+                
+            </div>
+            <div class="footer__subscribe">
+                <p class="footer__subcribe-title">Подпишись на наши акции:</p>
+                <form class="footer__subscribe-form"> 
+                    <input required class="footer__subscribe-field" placeholder="Введите Email..." type="email">
+                    <button type="submit" class="footer__button-style"> Подписаться</button>
+                </form>
+            </div>
+            <div class="footer__links">
+                <nav class="footer__links-container">
+                    <h3 class="footer__links-title">Быстрые ссылки</h3>
+                    <ul class="footer__link-list">
+                        <li><a class="footer__link-list-item" href="">Главная</a></li>
+                        <li><a class="footer__link-list-item" href="">Магазин</a></li>
+                        <li><a class="footer__link-list-item" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__copyright-container">
+            <span class="footer__copyright-line"></span>
+            <p class="footer__copyright-text">www.product-cards.com©all right reserve</p>
+        </div>
+    </div>
+    </footer>
     <script src="index.js" type="module"></script>  
     <script src="homework-7.js"></script>
     <script src="homework-8.js"></script>
     <script src="homework-9.js" type="module"></script>
     <script src="homework-10.js" type="module"></script>
+    <script src="homework-11.js" type="module"></script>
 
 </body>
 </html>

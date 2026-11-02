@@ -93,27 +93,6 @@ body {
     justify-content: space-between;
 }
 
-@media (max-width: 800px) {
-    .card {
-        width: 300px;
-    }
-}
-
-@media (max-width: 600px) {
-    .card {
-        width: 100%;
-    }
-    body {
-        padding: 50px 20px;
-    }
-    .title {
-        font-size: 40px;
-        line-height: 48px;
-    }
-}
-    
-
-
 .btns {
     display: flex;
     justify-content: space-around;
@@ -133,4 +112,234 @@ body {
 .active-color {
     background-color: teal;
     color: white;
+}
+
+.footer__container {
+    color: #FFFFFF;
+    background-color: #3A3A3A;
+    padding: 85px 75px 245px 84px;
+    font-family: 'Montserrat', sans-serif;
+    width: 1728px;
+    height: 477px;
+    box-sizing: border-box;
+}
+
+.footer__mane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__brand {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.footer__brand-title {
+    font-size: 28px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.footer__brand-text {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.footer__icones-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #3A3A3A;
+    width: 21px;
+    height: 18px;
+}
+
+
+.footer__subscribe {
+    position: relative;
+    margin-right: 200px;
+}
+
+.footer__subcribe-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.footer__subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__subscribe-field {
+    width: 477px;
+    height: 61px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000BF;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 36px;
+}
+
+.footer__subscribe-field:focus {
+    outline: none;
+}
+
+.footer__button-style {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: none;
+    /* border-left: 1px solid #000000; */
+    padding-left: 21px;
+}
+.footer__button-style::before {
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 1px;
+    background-color: #000000;
+    left: 0;
+}
+
+.footer__links-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+.footer__link-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-flow: column;
+    gap: 17px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.footer__link-list-item {
+    text-decoration: none;
+    color: currentColor;
+    margin-top: 23px;
+}
+
+
+
+.footer__copyright-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 162px;
+}
+
+.footer__copyright-line {
+    border-top:1px solid #FFFFFF;
+    width: 66px;
+    display: flex;
+}
+
+.footer__copyright-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 70vh;
+    z-index: 2;
+    background-color:#3A3A3A;
+    padding: 15px;
+    border-radius: 5%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.modal-showed {
+    display: block;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.modal__form input {
+    width: 200px;
+    height: 25px;
+    border-radius: 7px;
+    background-color:#FFFFFF;
+    border: none;
+}
+
+.modal__form label {
+    color: #FFFFFF;
+    font-size: 10px;
+    text-align: left;
+    width: 200px;
+}
+
+.modal__form-registration-button {
+    width: 130px;
+    height: 40px;
+    font-size: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background-color: #7FFFD4;
+    color: #3A3A3A;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.modal__close-button {
+    background-color: #3A3A3A;
+    color: #FFFFFF;
+    border: none;
+    font-size: 23px;
+    box-sizing: border-box;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+.overlay-showed {
+    display: block;
+}
+
+.registration-button {
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+    border: 3px solid #515076;
+    background-color: palevioletred;
+    font-size: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
 }

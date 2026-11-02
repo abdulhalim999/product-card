@@ -14,7 +14,7 @@ const user = {
 
 //4 задание автомобиль
 
-const auto ={
+const auto = {
     brand : 'Мерседес',
     model : '222',
     manufactureYear : 2020,
@@ -98,21 +98,21 @@ const hpBooks = [
     author: 'Дж. К. Роулинг',
     genre: 'Фэнтези',
     manufactureYear: 1997,
-    coverColor: 'Красный'
+    coverColor: 'Красный',
 },
 {
     name: 'Гарри Поттер и Тайная комната',
     author: 'Дж. К. Роулинг',
     genre: 'Фэнтези',
     manufactureYear: 1998,
-    coverColor: 'Зеленый'
+    coverColor: 'Зеленый',
 },
 {
     name: 'Гарри Поттер и узник Азкабана',
     author: 'Дж. К. Роулинг',
     genre: 'Фэнтези',
     manufactureYear: 2001,
-    coverColor: 'Синий'
+    coverColor: 'Синий',
 }
 ];
 

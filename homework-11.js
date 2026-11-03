@@ -45,7 +45,6 @@ getModalForm.addEventListener('submit', (event) => {
         alert('Пароли не совпадают')
         return
     } else {
-        console.log(getModalForm);
         alert('Регистрация прошла успешно')
     }
     const getName = document.querySelector('.modal__form-name')
@@ -63,6 +62,7 @@ getModalForm.addEventListener('submit', (event) => {
         createdOn : new Date(),
     }
     user = userForm
+    console.log(user)
     modal.classList.remove('modal-showed')
     overlay.classList.remove('overlay-showed')
 })

@@ -9,7 +9,7 @@ const user = {
     country : 'Дагестан',
     job : 'Учитель',
     hobby : 'Чтение книг',
-    religion : 'Ислам'
+    religion : 'Ислам',
 };
 
 //4 задание автомобиль

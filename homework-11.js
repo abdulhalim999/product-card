@@ -1,10 +1,10 @@
 
-const getForm = document.querySelector('.footer__subscribe-form')
+const form = document.querySelector('.footer__subscribe-form')
 
-getForm.addEventListener('submit', (event) => {
+form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const getEmail = document.querySelector('.footer__subscribe-field');
-    const userEmail = getEmail.value
+    const email = document.querySelector('.footer__subscribe-field');
+    const userEmail = email.value
     const formEmail = { email: userEmail}
     console.log(formEmail)
 })
@@ -30,38 +30,24 @@ overlay.addEventListener('click', () => {
 })
 
 let user
-const getModalForm = document.querySelector('.modal__form')
-getModalForm.addEventListener('submit', (event) => {
+const modalForm = document.querySelector('.modal__form')
+modalForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log(getModalForm.checkValidity());
-    if (getModalForm.checkValidity() === false) {
+    const formData = new FormData(modalForm);
+    const formDataObject = Object.fromEntries(formData)
+
+    console.log(modalForm.checkValidity());
+    if (modalForm.checkValidity() === false) {
         alert('Регистрация отклонена')
         return
     }
-    const getPassword = document.querySelector('.modal__form-password')
-    const getConfirmPassword = document.querySelector('.modal__form-confirm-password')
-    
-    if (getPassword.value !== getConfirmPassword.value) {
+        
+    if (formDataObject.password !== formDataObject.confirmPassword) {
         alert('Пароли не совпадают')
         return
-    } else {
-        alert('Регистрация прошла успешно')
     }
-    const getName = document.querySelector('.modal__form-name')
-    const getSurName = document.querySelector('.modal__form-surname')
-    const getDate = document.querySelector('.modal__form-birthdate')
-    const getLogin = document.querySelector('.modal__form-login')
-
-    const userForm = {
-        name : getName.value,
-        surname : getSurName.value,
-        birthdate : getDate.value,
-        login : getLogin.value,
-        password : getPassword.value,
-        confirmPassword : getConfirmPassword.value,
-        createdOn : new Date(),
-    }
-    user = userForm
+    alert('Регистрация прошла успешно')
+    user = {...formDataObject,createdOn : new Date()}
     console.log(user)
     modal.classList.remove('modal-showed')
     overlay.classList.remove('overlay-showed')

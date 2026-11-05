@@ -122,11 +122,12 @@ body {
     width: 1728px;
     height: 477px;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .footer__mane {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -158,7 +159,7 @@ body {
 
 .footer__subscribe {
     position: relative;
-    margin-right: 200px;
+    right: 90px;
 }
 
 .footer__subcribe-title {

@@ -8,59 +8,61 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
 </head>
 <body>
-    <div class="background">
-        <h1 class="title">Выбери свой продукт</h1>
-        <div class="button-container">
-            <button type="button" class="registration-button">Регистрация</button>
-        </div>
-        <div class="overlay"> </div>
-        <div class="modal">
-            <button type="button" class="modal__close-button">×</button>
-            <form class="modal__form" novalidate>
-                <label for="name">Имя</label>
-                <input name="name" required class="modal__form-name" placeholder="Введите имя" type="text" id="name">
-                <label for="surname">Фамилия</label>
-                <input name="surname" required class="modal__form-surname" placeholder="Введите фамилию" type="text" id="surname">
-                <label for="date">Дата рождения</label>
-                <input name="birthdate" required class="modal__form-birthdate" placeholder="Введите дату рождения" type="date" id="date">
-                <label for="login">Логин</label>
-                <input name="login" required class="modal__form-login" placeholder="Введите логин" type="text" id="login">
-                <label for="password">Пароль</label>
-                <input name="password" required class="modal__form-password" placeholder="Введите пароль" type="password" id="password">
-                <label for="confirm-password">Подтверждение пароля</label>
-                <input name="confirm-password" required class="modal__form-confirm-password" placeholder="Повторите введенный пароль" type="password" id="confirm-password">
-                <button type="submit"  class="modal__form-registration-button">Зарегистрироваться</button>
-            </form>
-        </div>
-        <div class="btns">
-            <button class="btn-appearance button-color">Сменить цвет первой карточки</button>
-            <button class="btn-appearance button-color-all">Сменить цвет всех карточек</button>
-            <button class="btn-appearance button-open-google">Открыть Google</button>
-            <button class="btn-appearance button-log-alert">Вывод консоль лога и алерта</button>
-            <button class="btn-appearance button-toggle">Переключатель</button>
-        </div>
-        <ul id="product-list" class="product-list">
-        <template id="card-template">
-            <li class="card">
-                <img class="card__img" src="">
-                <span class="card__purpose"></span>
-                <h2 class="card__name"></h2>
-                <p class="card__description"></p>
+    <div class="content-container">
+        <div class="background">
+            <h1 class="title">Выбери свой продукт</h1>
+            <div class="button-container">
+                <button type="button" class="registration-button">Регистрация</button>
+            </div>
+            <div class="overlay"> </div>
+            <div class="modal">
+                <button type="button" class="modal__close-button">×</button>
+                <form class="modal__form" novalidate>
+                    <label for="name">Имя</label>
+                    <input name="name" required class="modal__form-name" placeholder="Введите имя" type="text" id="name">
+                    <label for="surname">Фамилия</label>
+                    <input name="surname" required class="modal__form-surname" placeholder="Введите фамилию" type="text" id="surname">
+                    <label for="date">Дата рождения</label>
+                    <input name="birthdate" required class="modal__form-birthdate" placeholder="Введите дату рождения" type="date" id="date">
+                    <label for="login">Логин</label>
+                    <input name="login" required class="modal__form-login" placeholder="Введите логин" type="text" id="login">
+                    <label for="password">Пароль</label>
+                    <input name="password" required class="modal__form-password" placeholder="Введите пароль" type="password" id="password">
+                    <label for="confirm-password">Подтверждение пароля</label>
+                    <input name="confirm-password" required class="modal__form-confirm-password" placeholder="Повторите введенный пароль" type="password" id="confirm-password">
+                    <button type="submit"  class="modal__form-registration-button">Зарегистрироваться</button>
+                </form>
+            </div>
+            <div class="btns">
+                <button class="btn-appearance button-color">Сменить цвет первой карточки</button>
+                <button class="btn-appearance button-color-all">Сменить цвет всех карточек</button>
+                <button class="btn-appearance button-open-google">Открыть Google</button>
+                <button class="btn-appearance button-log-alert">Вывод консоль лога и алерта</button>
+                <button class="btn-appearance button-toggle">Переключатель</button>
+            </div>
+            <ul id="product-list" class="product-list">
+            <template id="card-template">
+                <li class="card">
+                    <img class="card__img" src="">
+                    <span class="card__purpose"></span>
+                    <h2 class="card__name"></h2>
+                    <p class="card__description"></p>
 
-                <span class="card__compound">Состав:</span>
+                    <span class="card__compound">Состав:</span>
 
-                <ul class="card__list">
-                    <li class="card__compound-item"></li>
-                    <li class="card__compound-item"></li>
-                    <li class="card__compound-item"></li>
-                </ul>
-                <div class="card__price-container">
-                    <span class="card__price">Цена:</span>
-                    <span class="card__numbers"></span>
-                </div>
-            </li>
-        </template>
-        </ul>
+                    <ul class="card__list">
+                        <li class="card__compound-item"></li>
+                        <li class="card__compound-item"></li>
+                        <li class="card__compound-item"></li>
+                    </ul>
+                    <div class="card__price-container">
+                        <span class="card__price">Цена:</span>
+                        <span class="card__numbers"></span>
+                    </div>
+                </li>
+            </template>
+            </ul>
+        </div>
     </div>
     <footer>
     <div class="footer__container">
